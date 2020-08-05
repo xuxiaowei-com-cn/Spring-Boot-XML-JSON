@@ -1,0 +1,18 @@
+# 服务器 配置
+server:
+  # 端口
+  port: 8080
+#
+# Spring Boot 配置
+spring:
+  #
+  # Thymeleaf 配置
+  thymeleaf:
+    # 是否启用模板缓存。
+    cache: false
+#
+# 日志 配置
+logging:
+  level:
+    web: debug
+    cn.com.xuxiaowei: debug
