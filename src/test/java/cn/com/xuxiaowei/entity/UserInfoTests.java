@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +13,9 @@ import java.util.UUID;
  * XML Bean 测试类
  */
 @Slf4j
-@SpringBootTest
 class UserInfoTests {
 
-    private XmlMapper xmlMapper = new XmlMapper();
+    private final XmlMapper xmlMapper = new XmlMapper();
 
     /**
      * XML 与 Bean 相互转化
